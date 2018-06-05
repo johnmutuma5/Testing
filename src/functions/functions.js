@@ -1,3 +1,5 @@
-const add = (num, num1) => num + num1;
+const functions = {
+    add: (num, num1) => num + num1,
+}
 
-module.exports = add;
+module.exports = functions;
