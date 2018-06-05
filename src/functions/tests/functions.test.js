@@ -13,4 +13,13 @@ test("it does not return 5 for 2+2", () => {
 
 test("it is null", () => {
     expect(functions.isNull()).toBeNull();
-})
+});
+
+test("it returns the correct user", () =>{
+    let user = {
+        name: "John",
+        occupation: "Software"
+    };
+
+    expect(functions.getUser()).toBe(user);
+});
