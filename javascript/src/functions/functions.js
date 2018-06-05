@@ -4,7 +4,8 @@ const functions = {
     getUser: () => ({
         name: "John",
         occupation: "Software"
-    })
+    }),
+    getResponse: () => 'Successful. Operation approved!'
 }
 
 module.exports = functions;
