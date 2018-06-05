@@ -12,5 +12,5 @@ test("it does not return 5 for 2+2", () => {
 
 
 test("it is null", () => {
-    expect(functions.isNull().toBeNull());
+    expect(functions.isNull()).toBeNull();
 })
