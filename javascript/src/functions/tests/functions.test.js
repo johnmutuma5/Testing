@@ -29,3 +29,10 @@ test("response begins with Successful", () => {
     let response = functions.getResponse();
     expect(response).toMatch(match);
 })
+
+test("it gets correct async message: with promise", () => {
+    expect.assertions(1);
+    return functions.getMsgPromise().then((message) => {
+        expect(message).toEqual('Hello world!');
+    });
+})

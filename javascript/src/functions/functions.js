@@ -1,3 +1,5 @@
+const asyncCalls = require('../asyncCalls/asyncCalls');
+
 const functions = {
     add: (num, num1) => num + num1,
     isNull: () => null,
@@ -5,7 +7,9 @@ const functions = {
         name: "John",
         occupation: "Software"
     }),
-    getResponse: () => 'Successful. Operation approved!'
+    getResponse: () => 'Successful. Operation approved!',
+    // this will return a promise returned by getMsgAsync
+    getMsgPromise: () => asyncCalls.getMsgPromise()
 }
 
 module.exports = functions;
