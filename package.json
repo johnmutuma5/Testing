@@ -15,5 +15,8 @@
     "javascript"
   ],
   "author": "John Mutuma",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.1.0"
+  }
 }
