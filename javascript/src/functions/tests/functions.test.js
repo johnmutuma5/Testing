@@ -23,3 +23,9 @@ test("it returns the correct user", () =>{
     // using toBe here in place of toEqual fails the test, try
     expect(functions.getUser()).toEqual(user);
 });
+
+test("response begins with Successful", () => {
+    let match = /^Successful/;
+    let response = functions.getResponse();
+    expect(response).toMatch(match);
+})
