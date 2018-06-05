@@ -36,3 +36,9 @@ test("it gets correct async message: with promise", () => {
         expect(message).toEqual('Hello world!');
     });
 })
+
+test("it gets correct async message: async/await", async () => {
+    expect.assertions(1);
+    const message = await functions.getMsgPromise();
+    expect(message).toEqual('Hello world!');
+})

@@ -10,8 +10,9 @@ const getMsgPromise = () => {
     return prom;
 };
 
+
 const asyncCalls = {
-    getMsgPromise: getMsgPromise
+    getMsgPromise: getMsgPromise,
 }
 
 module.exports = asyncCalls;

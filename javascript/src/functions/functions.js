@@ -9,7 +9,8 @@ const functions = {
     }),
     getResponse: () => 'Successful. Operation approved!',
     // this will return a promise returned by getMsgAsync
-    getMsgPromise: () => asyncCalls.getMsgPromise()
+    getMsgPromise: () => asyncCalls.getMsgPromise(),
+    // this will not return a promise but it is asynchronous
 }
 
 module.exports = functions;
