@@ -1,0 +1,19 @@
+{
+  "name": "testing-guide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://to.update.com"
+  },
+  "keywords": [
+    "testing",
+    "javascript"
+  ],
+  "author": "John Mutuma",
+  "license": "ISC"
+}
