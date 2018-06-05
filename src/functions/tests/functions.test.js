@@ -20,6 +20,6 @@ test("it returns the correct user", () =>{
         name: "John",
         occupation: "Software"
     };
-
-    expect(functions.getUser()).toBe(user);
+    // using toBe here in place of toEqual fails the test, try
+    expect(functions.getUser()).toEqual(user);
 });
