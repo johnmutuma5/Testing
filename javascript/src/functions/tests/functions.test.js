@@ -28,17 +28,17 @@ test("response begins with Successful", () => {
     let match = /^Successful/;
     let response = functions.getResponse();
     expect(response).toMatch(match);
-})
+});
 
-test("it gets correct async message: with promise", () => {
+test("it gets correct async message: with promise/then", () => {
     expect.assertions(1);
     return functions.getMsgPromise().then((message) => {
         expect(message).toEqual('Hello world!');
     });
-})
+});
 
 test("it gets correct async message: async/await", async () => {
     expect.assertions(1);
     const message = await functions.getMsgPromise();
     expect(message).toEqual('Hello world!');
-})
+});
