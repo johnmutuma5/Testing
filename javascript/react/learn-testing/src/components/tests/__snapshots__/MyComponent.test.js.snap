@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyComponent TestCase MyComponent renders correctly 1`] = `
+<div
+  className="myComp"
+>
+  <p
+    className="para"
+  >
+     This is a paragraph 
+  </p>
+  <div
+    className="sub"
+  >
+    Subcomponents contents
+    <div
+      className="subsub"
+    >
+      Subsub contents
+    </div>
+  </div>
+</div>
+`;
